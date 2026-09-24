@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 BASE = __import__("pathlib").Path(__file__).parent
-DATA = BASE / "data"
+DATA = BASE
 
 course_master = pd.read_csv(DATA/"course_master.csv")
 semester_offerings = pd.read_csv(DATA/"semester_offerings.csv")
